@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="./Poll.js"></script>
+    <script src="./websocket_client.js"></script>
+    <title>websocket_client</title>
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="poll-box">
+               <div class="poll-container">
+                    <div id="input" class="input">
+                        <input id="questionFieldInput" type="text" class="poll-question" placeholder="Ask a YES/NO question..." required> <br/>
+                        <button class="inputButton" onclick="startPoll()">Start poll</button>    
+                    </div>
+                    <div id="output" class="output hide">
+                        <h1 id="questionFieldOutput" class="poll-question">Normaal kan je dit niet zien...</h1>
+                        <input id="nameFieldInput" type="text" class="" placeholder="Your Name (optional)"> <br />
+                        <div class="poll-panel row">
+                            <div class="btn poll-panel-btn" aria-role="button" data-result="0" data-vote="0" onclick="vote(0)"> <span>Yes</span></div>
+                            <div class="btn poll-panel-btn" aria-role="button" data-result="0" data-vote="1" onclick="vote(1)"> <span>No</span></div>
+                        </div>
+                    </div>
+                    <div id="thanks"></div>
+                </div>
+            </div>
+        </div>
+        <div id="results">
+
+        </div>
+    </div>
+
+    
+</body>
+</html>

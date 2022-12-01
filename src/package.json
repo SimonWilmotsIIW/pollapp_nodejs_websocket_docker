@@ -1,0 +1,14 @@
+{
+    "name": "pollapp_nodejs_websocket_docker",
+    "version": "1.0.0",
+    "description": "Node.js on Docker",
+    "author": "Simon Wilmots",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "dependencies": {
+        "http-server": "^14.1.1",
+        "ws": "^8.11.0"
+    }
+}
