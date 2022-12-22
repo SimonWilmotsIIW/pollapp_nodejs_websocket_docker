@@ -8,6 +8,6 @@ RUN npm install
 
 COPY ./src /usr/src/app
 
-EXPOSE 8080
+EXPOSE 5050
 #ENTRYPOINT [ "http-server", "client.html" ]
-CMD [ "tail", "-f", "/dev/null" ]
+CMD [ "node", "websocket_server.js" ]

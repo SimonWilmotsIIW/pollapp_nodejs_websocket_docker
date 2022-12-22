@@ -7,5 +7,5 @@ echo "Starting Pollapp container "
 echo "=========================================="
 echo
 
-docker build -t pollapp:latest .
-docker run --rm -p  8080:8080 --name pollapp pollapp
+docker build -t pollapp:latest . &&
+docker run --rm -p  5050:5050 --name pollapp pollapp:latest
