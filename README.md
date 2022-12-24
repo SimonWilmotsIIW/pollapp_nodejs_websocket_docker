@@ -13,6 +13,9 @@ Run `launch_pollapp.sh`
 * Na elke vote wordt het scoreboard geüpdate op elke client  
 ![Scoreboard](./media/Scoreboard.png)
 
+## Demo
+![Demo](./media/pollapp_nodejs_websocket_demo.gif)
+
 ## Technologies
 * JavaScript 
 * WebSocket
